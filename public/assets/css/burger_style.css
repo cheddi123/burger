@@ -1,0 +1,14 @@
+.burgerImage{
+width: 200px;
+height: 200px;
+background-image: url(https://nerdist.com/wp-content/uploads/2018/08/bk-cheese-8152018-970-by-545.jpg);
+
+}
+
+/* body{
+    background-color: brown
+} */
+
+.center{
+text-align: center
+}
