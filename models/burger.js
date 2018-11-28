@@ -7,22 +7,22 @@ var burger = {
     });
   },
   // The variables cols and vals are arrays.
-  create: function (colName1, colName2, colVal1, colVal2, cb) {
-    orm.create("burgers", colName1, colName2, colVal1, colVal2, function (res) {
+  insertOne: function (colNames,  colVals, cb) {
+    orm.insertOne("burgers", colNames, colVals,  function (res) {
       cb(res);
     });
   },
-  update: function (objColVal, condition, cb) {
-    orm.update("burgers", objColVal, condition, function (res) {
+  updateOne: function (objColVal, condition, cb) {
+    orm.updateOne("burgers", objColVal, condition, function (res) {
       cb(res);
     });
   },
 
-  // delete: function (condition, cb) {
-  //   orm.delete("burgers", condition, function (res) {
-  //     cb(res);
-  //   });
-  // }
+  delete: function (condition, cb) {
+    orm.deleteOne("burgers", condition, function (res) {
+      cb(res);
+    });
+  }
 
 
 };

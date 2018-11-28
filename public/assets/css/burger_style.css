@@ -5,10 +5,21 @@ background-image: url(https://nerdist.com/wp-content/uploads/2018/08/bk-cheese-8
 
 }
 
-/* body{
-    background-color: brown
-} */
 
 .center{
 text-align: center
+}
+
+.container{
+    background-image: url(../img/background.jpg);
+    background-size: cover; 
+    color:whitesmoke  
+}
+
+body{
+    background-color: aqua
+}
+
+.strikethrough{
+    text-decoration: line-through;
 }
