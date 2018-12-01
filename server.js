@@ -1,10 +1,12 @@
 
 require('dotenv').config()
 
+// Dependencies
+// =============================================================
 var express = require("express");
 
-
-
+// Sets up the Express App
+// =============================================================
 var app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
@@ -26,6 +28,8 @@ var routes = require("./controllers/burgers_controllers.js");
 app.use(routes);
 
 var PORT = process.env.PORT || 3000;
+// Starts the server to begin listening
+// =============================================================
 app.listen(PORT, function() {
   console.log("App now listening on: http://localhost:" + PORT);
 });

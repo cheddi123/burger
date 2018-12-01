@@ -15,8 +15,6 @@ function printQuestionMarks(num) {
   return arr.toString();
 }
 
-
-
 // Helper function to convert object key/value pairs to SQL syntax
 function objToSql(ob) {
     var arr = [];
@@ -50,10 +48,10 @@ var orm = {
           cb(result);
       });
     },
-
+//  insert an entry into the database
     insertOne : function(tableName, colNames,colVals,cb){
 
-        // var queryString="INSERT INTO" + tableName + "(" + colNames.toString() +  ") VALUES (?) ";    
+   // var queryString="INSERT INTO" + tableName + "(" + colNames.toString() +  ") VALUES (?) ";    
         
         var queryString = "INSERT INTO " + tableName;
 
@@ -76,7 +74,7 @@ var orm = {
 
 
 
-
+//update the database
     updateOne: function( tableName,objColVal, condition,cb){
 
       var queryString = "UPDATE " + tableName;
@@ -95,7 +93,7 @@ var orm = {
               cb(result);
         });
     },
-
+//delete an entry in the database
     deleteOne:function(tableName,condition ,cb){
         // var queryString= "DELETE FROM " + tableName + "WHERE" + condition;
 
